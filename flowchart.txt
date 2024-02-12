@@ -1,0 +1,31 @@
+1. Display Welcome Message
+2. Prompt User for Investment Details:
+   a. Ask for Initial Investment Amount
+   b. Ask for Monthly Deposit Amount
+   c. Ask for Annual Interest Rate (Compounded)
+   d. Ask for Number of Years for Investment to Grow
+   e. Display a message like "Press any key to continue…" to proceed with calculations
+
+3. Calculate Investment Growth without Additional Monthly Deposits:
+   a. Initialize variables for month, opening amount, deposited amount (set to 0 for this scenario), total, interest, and closing balance
+   b. For each month in the investment period:
+      i. Calculate Total as the sum of Opening Amount and Deposited Amount
+      ii. Calculate Interest for the month: Total * (Annual Interest Rate/100) / 12
+      iii. Calculate Closing Balance as the sum of Total and Interest
+      iv. Update Opening Amount to Closing Balance for next month calculation
+      v. Display month, Opening Amount, Deposited Amount, Total, Interest, and Closing Balance
+
+4. Calculate Investment Growth with Monthly Deposits:
+   a. Reset variables for month, opening amount, and now consider Deposited Amount as per user input
+   b. For each month in the investment period:
+      i. Repeat steps b.i to b.v, including the Deposited Amount in the Total calculation
+
+5. Allow User to Test Different Scenarios:
+   a. Ask if the user wants to try different values for Monthly Deposit, Interest Rate, or Investment Period
+   b. If yes, repeat from Step 2
+   c. If no, display a closing message and end the program
+
+6. Additional Features:
+   a. Include error handling for invalid inputs (e.g., negative numbers, non-numeric values)
+   b. Ensure outputs are clearly formatted and easy to read
+   c. Consider implementing a graphical user interface (GUI) for a more interactive user experience, time and resources permitting
